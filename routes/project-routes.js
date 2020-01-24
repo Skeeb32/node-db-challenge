@@ -33,14 +33,20 @@ router.get(`/`, (req, res) => {
 });
 
 router.get(`/:id`, validateId, (req, res) => {
+  console.log(req.project.name)
+  console.log(req.project.description)
   res.status(200).json(req.project);
+  
 });
 
 router.get(`/:id/tasks`, validateId, (req, res) => {
   const id = req.project.id;
+  const projectname = req.project.name;
+  const projectdescription = req.project.description;
+console.log(req.project)
 
   db.getProjectTasks(id)
-    .then(tasks => res.status(200).json(tasks))
+    .then(tasks => res.status(200).json({projectname, projectdescription, tasks}))
     .catch(error => {
       console.error(error);
       res.status(500).json({ errorMessage: `Unable to retrieve tasks` });
