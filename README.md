@@ -1,4 +1,4 @@
-# Sprint Challenge: Node DB Sprint
+# Sprint Challenge: Node DB Sprint!
 
 ## Description
 
@@ -39,12 +39,18 @@ Commit your code regularly and use descriptive messages. This helps both you (in
 Demonstrate your understanding of this week's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] Explain the difference between `Relational Databases` and `SQL`.
+Relational databases store ‘related” data and is the oldest and most common type of database in use today. In relational databases, the data is stored in tabular format grouped into rows and columns (similar to spreadsheets). A collection of rows is called a table. Each row represents a single record in the table and is made up of one or more columns. These kinds of databases are called relational because a relation is a mathematical idea that is equivalent to a table. So relational databases are databases that store their data in tables. On the other hand, Structured Query Language is the standard language used to manage databases and the data within them. It is the de facto way to interact with a database.
+As a query language, SQL is optimized for the sole purpose of querying data. This means not only optimization in writing queries, but optimization in terms of retrieving data, which is critical in the modern world of big data. SQL is a standard language, which means that it almost certainly be supported, no matter how your database is managed. That said, be aware the SQL language can vary depending on database management tools.
 
 - [ ] Why do tables need a `primary key`?
+Tables have primary keys that uniquely identify each row.
 
 - [ ] What is the name given to a table column that references the primary key on another table.
+Any data inserted into the table must match the datatypes determined in schema design. Another critical component of schema design is to understand how different tables relate to each other.
 
 - [ ] What do we need in order to have a _many to many_ relationship between two tables.
+We need join statements. We can use a join to combine query data from multiple tables. Using joins requires that the two tables of interest contain at least one field with shared information.
+
 
 ## Minimum Viable Product
 
